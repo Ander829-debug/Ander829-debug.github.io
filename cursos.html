@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cursos Esenciales - CipiNawi</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header>
+    <div class="header-logo-container">
+      <img src="img/cipinawi_logo.png" alt="Logo de CipiNawi" class="header-logo">
+      <h1>CipiNawi</h1>
+    </div>
+    <p>Formación salvadoreña para un futuro mejor</p>
+  </header>
+
+  <main>
+    <a href="index.html" class="back-link">← Volver al inicio</a>
+    <h2 class="section-title">Cursos Esenciales para tu Carrera</h2>
+    <p>Fortalece tus habilidades con estos cursos enfocados en las competencias más demandadas.</p>
+
+    <div class="filter-container">
+      <div class="filter-group">
+        <label for="category-filter">Filtrar por Área:</label>
+        <select id="category-filter" class="filter-select">
+          <option value="all">Todas las áreas</option>
+          <option value="industrial">Ingeniería Industrial</option>
+          <option value="diseno">Diseño Gráfico</option>
+        </select>
+      </div>
+      <div class="filter-group">
+        <label>Filtrar por Precio:</label>
+        <div class="radio-group">
+          <label><input type="radio" name="price-filter" value="all" checked> Todos</label>
+          <label><input type="radio" name="price-filter" value="free"> Gratis</label>
+          <label><input type="radio" name="price-filter" value="paid"> De Pago</label>
+        </div>
+      </div>
+    </div>
+
+    <div class="course-grid">
+      <div class="course-card" data-category="industrial" data-price="0">
+        <img src="img/curso_lean.jpg" alt="Curso Lean Manufacturing" class="course-image">
+        <div class="course-body">
+          <h3>Introducción a Lean Manufacturing</h3>
+          <div class="course-meta"><span class="course-level basico">Básico</span><span class="course-price free">Gratis</span></div>
+          <button class="sim-button">Iniciar Curso</button>
+        </div>
+      </div>
+      <div class="course-card" data-category="industrial" data-price="49.99">
+        <img src="img/curso_supply_chain.jpg" alt="Curso Cadena de Suministro" class="course-image">
+        <div class="course-body">
+          <h3>Gestión de la Cadena de Suministro</h3>
+          <div class="course-meta"><span class="course-level intermedio">Intermedio</span><span class="course-price">$49.99</span></div>
+          <button class="sim-button">Iniciar Curso</button>
+        </div>
+      </div>
+      <div class="course-card" data-category="industrial" data-price="0">
+        <img src="img/curso_seguridad.jpg" alt="Curso Seguridad Industrial" class="course-image">
+        <div class="course-body">
+          <h3>Fundamentos de Seguridad Industrial</h3>
+          <div class="course-meta"><span class="course-level basico">Básico</span><span class="course-price free">Gratis</span></div>
+          <button class="sim-button">Iniciar Curso</button>
+        </div>
+      </div>
+      <div class="course-card" data-category="industrial" data-price="79.99">
+        <img src="img/curso_spc.jpg" alt="Curso Control Estadístico" class="course-image">
+        <div class="course-body">
+          <h3>Control Estadístico de Procesos (SPC)</h3>
+          <div class="course-meta"><span class="course-level avanzado">Avanzado</span><span class="course-price">$79.99</span></div>
+          <button class="sim-button">Iniciar Curso</button>
+        </div>
+      </div>
+      <div class="course-card" data-category="diseno" data-price="0">
+        <img src="img/curso_photoshop.jpg" alt="Curso de Photoshop" class="course-image">
+        <div class="course-body">
+          <h3>Photoshop para Principiantes</h3>
+          <div class="course-meta"><span class="course-level basico">Básico</span><span class="course-price free">Gratis</span></div>
+          <button class="sim-button">Iniciar Curso</button>
+        </div>
+      </div>
+      <div class="course-card" data-category="diseno" data-price="35.00">
+        <img src="img/curso_identidad.jpg" alt="Curso Identidad Visual" class="course-image">
+        <div class="course-body">
+          <h3>Diseño de Identidad Visual Corporativa</h3>
+          <div class="course-meta"><span class="course-level intermedio">Intermedio</span><span class="course-price">$35.00</span></div>
+          <button class="sim-button">Iniciar Curso</button>
+        </div>
+      </div>
+      <div class="course-card" data-category="diseno" data-price="99.99">
+        <img src="img/curso_uiux.jpg" alt="Curso UI/UX" class="course-image">
+        <div class="course-body">
+          <h3>Fundamentos de UI/UX para Apps</h3>
+          <div class="course-meta"><span class="course-level avanzado">Avanzado</span><span class="course-price">$99.99</span></div>
+          <button class="sim-button">Iniciar Curso</button>
+        </div>
+      </div>
+      <div class="course-card" data-category="diseno" data-price="0">
+        <img src="img/curso_illustrator.jpg" alt="Curso de Illustrator" class="course-image">
+        <div class="course-body">
+          <h3>Illustrator: De Cero a Experto</h3>
+          <div class="course-meta"><span class="course-level basico">Básico</span><span class="course-price free">Gratis</span></div>
+          <button class="sim-button">Iniciar Curso</button>
+        </div>
+      </div>
+    </div>
+  </main>
+  
+  <footer>
+    <p>&copy; 2025 CipiNawi | El Salvador</p>
+  </footer>
+
+  <script src="cursos_filtro.js"></script>
+</body>
+</html>

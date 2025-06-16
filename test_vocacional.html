@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Test Vocacional - Capacítate SV</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header>
+  <div class="header-logo-container">
+    <img src="imagenes/logo2.jpg" alt="Logo de CipiNawi" class="header-logo">
+    <h1>CipiNawi</h1>
+  </div>
+  <p>Formación salvadoreña para un futuro mejor</p>
+  </header>
+
+  <main>
+    <a href="index.html" class="back-link">← Volver al inicio</a>
+    <h2 class="section-title">Test Vocacional Interactivo</h2>
+    <p>Responde las siguientes preguntas con la opción que mejor te describa. ¡No hay respuestas correctas o incorrectas! Al final, te mostraremos tu perfil vocacional.</p>
+
+    <form id="vocational-test">
+      <div class="question">
+        <p class="question-title">1. En mi tiempo libre, prefiero...</p>
+        <div class="options-container">
+          <label><input type="radio" name="q1" value="realista" required> Armar, reparar o construir algo con mis manos.</label>
+          <label><input type="radio" name="q1" value="investigador"> Investigar a fondo un tema que me da curiosidad.</label>
+          <label><input type="radio" name="q1" value="artista"> Dibujar, escribir, tocar música o crear algo original.</label>
+          <label><input type="radio" name="q1" value="social"> Ayudar a un amigo con un problema o participar en voluntariado.</label>
+          <label><input type="radio" name="q1" value="emprendedor"> Organizar un evento o planificar un nuevo proyecto.</label>
+        </div>
+      </div>
+
+      <div class="question">
+        <p class="question-title">2. Me sentiría más satisfecho trabajando en...</p>
+        <div class="options-container">
+          <label><input type="radio" name="q2" value="realista" required> Un taller, al aire libre o en un laboratorio práctico.</label>
+          <label><input type="radio" name="q2" value="investigador"> Una biblioteca, un centro de investigación o un laboratorio científico.</label>
+          <label><input type="radio" name="q2" value="artista"> Un estudio de diseño, un teatro o un espacio creativo.</label>
+          <label><input type="radio" name="q2" value="social"> Una escuela, un hospital, una clínica o una oficina de consejería.</label>
+          <label><input type="radio" name="q2" value="emprendedor"> Una oficina de negocios, liderando un equipo o en ventas.</label>
+        </div>
+      </div>
+      
+      <div class="question">
+        <p class="question-title">3. Los problemas que más disfruto resolver son aquellos que...</p>
+        <div class="options-container">
+          <label><input type="radio" name="q3" value="realista" required> Requieren usar herramientas o maquinaria.</label>
+          <label><input type="radio" name="q3" value="investigador"> Necesitan análisis de datos y pensamiento lógico.</label>
+          <label><input type="radio" name="q3" value="artista"> Permiten encontrar una solución única y expresiva.</label>
+          <label><input type="radio" name="q3" value="social"> Involucran entender y ayudar a las personas.</label>
+          <label><input type="radio" name="q3" value="emprendedor"> Implican tomar riesgos y persuadir a otros.</label>
+        </div>
+      </div>
+
+      <div class="question">
+        <p class="question-title">4. Si tuviera que elegir una materia, sería...</p>
+        <div class="options-container">
+          <label><input type="radio" name="q4" value="realista" required> Taller técnico, biología o educación física.</label>
+          <label><input type="radio" name="q4" value="investigador"> Matemáticas, física, química o informática.</label>
+          <label><input type="radio" name="q4" value="artista"> Arte, música, literatura o diseño.</label>
+          <label><input type="radio" name="q4" value="social"> Psicología, sociología o historia.</label>
+          <label><input type="radio" name="q4" value="emprendedor"> Economía, administración o debate.</label>
+        </div>
+      </div>
+
+      <div class="question">
+        <p class="question-title">5. Me describo como una persona...</p>
+        <div class="options-container">
+          <label><input type="radio" name="q5" value="realista" required> Práctica y orientada a la acción.</label>
+          <label><input type="radio" name="q5" value="investigador"> Analítica y curiosa.</label>
+          <label><input type="radio" name="q5" value="artista"> Creativa e imaginativa.</label>
+          <label><input type="radio" name="q5" value="social"> Empática y colaboradora.</label>
+          <label><input type="radio" name="q5" value="emprendedor"> Ambiciosa y persuasiva.</label>
+        </div>
+      </div>
+
+      <div class="question">
+        <p class="question-title">6. Cuando trabajo en equipo, tiendo a...</p>
+        <div class="options-container">
+          <label><input type="radio" name="q6" value="realista" required> Encargarme de las tareas prácticas y la ejecución.</label>
+          <label><input type="radio" name="q6" value="investigador"> Analizar la información y proponer estrategias lógicas.</label>
+          <label><input type="radio" name="q6" value="artista"> Aportar las ideas originales y el enfoque creativo.</label>
+          <label><input type="radio" name="q6" value="social"> Asegurarme de que todos se sientan incluidos y motivados.</label>
+          <label><input type="radio" name="q6" value="emprendedor"> Tomar el rol de líder y organizar las tareas.</label>
+        </div>
+      </div>
+
+      <div class="question">
+        <p class="question-title">7. Me atraen las carreras que ofrecen...</p>
+        <div class="options-container">
+          <label><input type="radio" name="q7" value="realista" required> Resultados tangibles y visibles.</label>
+          <label><input type="radio" name="q7" value="investigador"> La oportunidad de descubrir cosas nuevas.</label>
+          <label><input type="radio" name="q7" value="artista"> Libertad para expresarme.</label>
+          <label><input type="radio" name="q7" value="social"> La posibilidad de generar un impacto positivo en otros.</label>
+          <label><input type="radio" name="q7" value="emprendedor"> Oportunidades de crecimiento y liderazgo.</label>
+        </div>
+      </div>
+
+      <div class="question">
+        <p class="question-title">8. Prefiero un ambiente de trabajo que sea...</p>
+        <div class="options-container">
+          <label><input type="radio" name="q8" value="realista" required> Estructurado y con tareas claras.</label>
+          <label><input type="radio" name="q8" value="investigador"> Intelectualmente desafiante.</label>
+          <label><input type="radio" name="q8" value="artista"> Flexible y poco convencional.</label>
+          <label><input type="radio" name="q8" value="social"> Colaborativo y lleno de interacción humana.</label>
+          <label><input type="radio" name="q8" value="emprendedor"> Competitivo y dinámico.</label>
+        </div>
+      </div>
+
+      <div class="question">
+        <p class="question-title">9. ¿Qué habilidad te gustaría desarrollar más?</p>
+        <div class="options-container">
+          <label><input type="radio" name="q9" value="realista" required> Habilidades manuales o técnicas.</label>
+          <label><input type="radio" name="q9" value="investigador"> Capacidad de análisis y resolución de problemas.</label>
+          <label><input type="radio" name="q9" value="artista"> Talento artístico o de diseño.</label>
+          <label><input type="radio" name="q9" value="social"> Habilidades de comunicación y empatía.</label>
+          <label><input type="radio" name="q9" value="emprendedor"> Capacidad de negociación y liderazgo.</label>
+        </div>
+      </div>
+
+      <div class="question">
+        <p class="question-title">10. Para mí, el éxito significa...</p>
+        <div class="options-container">
+          <label><input type="radio" name="q10" value="realista" required> Construir o arreglar algo que funcione perfectamente.</label>
+          <label><input type="radio" name="q10" value="investigador"> Entender completamente un tema complejo.</label>
+          <label><input type="radio" name="q10" value="artista"> Crear una obra que inspire a otros.</label>
+          <label><input type="radio" name="q10" value="social"> Saber que he ayudado a mejorar la vida de alguien.</label>
+          <label><input type="radio" name="q10" value="emprendedor"> Alcanzar una posición de influencia y lograr grandes metas.</label>
+        </div>
+      </div>
+
+      <button type="submit" class="sim-button">Ver Mis Resultados</button>
+    </form>
+    
+    <div id="test-result" class="resultado" style="display: none;">
+        </div>
+
+  </main>
+  
+  <footer>
+    <p>&copy; 2025 Capacítate SV | El Salvador</p>
+  </footer>
+
+  <script src="test_vocacional.js"></script>
+</body>
+</html>

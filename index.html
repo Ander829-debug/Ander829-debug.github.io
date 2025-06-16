@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CipiNawi - Formación para El Salvador</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header>
+  <div class="header-logo-container">
+    <img src="imagenes/logo2.jpg" alt="Logo de CipiNawi" class="header-logo">
+    <h1>CipiNawi</h1>
+  </div>
+  <p>Formación salvadoreña para un futuro mejor</p>
+  </header>
+
+  <nav>
+    <a href="#" onclick="showSection('bachillerato')">Bachillerato</a>
+    <a href="#" onclick="showSection('universidad')">Universidad</a>
+    <a href="#" onclick="showSection('laboral')">Área Laboral</a>
+  </nav>
+
+  <main>
+    <section id="bachillerato" class="active">
+      <h2 class="section-title">Bachillerato: Orientación Vocacional</h2>
+      <div class="sim-grid">
+        <a href="simulaciones.html" class="card-link">
+          <div class="card">
+            <h3>Simulaciones de Carreras</h3>
+            <p>Participa en actividades interactivas que muestran lo que hacen los profesionales.</p>
+          </div>
+        </a>
+        <a href="test_vocacional.html" class="card-link">
+          <div class="card">
+            <h3>Test Vocacional</h3>
+            <p>Descubre tus talentos e intereses de forma dinámica a través de nuestro test.</p>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <section id="universidad">
+      <h2 class="section-title">Universidad: Habilidades Profesionales</h2>
+      <div class="sim-grid">
+        <a href="mentoria.html" class="card-link">
+          <div class="card">
+            <h3>Mentoría por Profesionales</h3>
+            <p>Conecta con expertos que te orientan sobre el mercado laboral y cómo prepararte.</p>
+          </div>
+        </a>
+        <a href="cursos.html" class="card-link">
+          <div class="card">
+            <h3>Cursos Esenciales</h3>
+            <p>Accede a cursos gratuitos o de pago sobre habilidades clave en tu carrera.</p>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <section id="laboral">
+  <h2 class="section-title">Área Laboral: Capacitación y Oportunidades</h2>
+  <div class="sim-grid">
+    <a href="oficios.html" class="card-link">
+      <div class="card">
+        
+        <h3>Capacitación en Oficios</h3>
+        <p>Aprende una habilidad práctica y de alta demanda en el mercado.</p>
+      </div>
+    </a>
+    
+    <a href="servicios.html" class="card-link">
+      <div class="card">
+       
+        <h3>Ofrece tus Servicios</h3>
+        <p>¿Eres un profesional? Ofrece tus servicios y encuentra nuevos clientes.</p>
+      </div>
+    </a>
+
+    <a href="empleos.html" class="card-link">
+      <div class="card">
+        <h3>Ofertas de Empleo</h3>
+        <p>Encuentra un trabajo formal en las mejores empresas del país.</p>
+      </div>
+    </a>
+  </div>
+    </section>
+  </main>
+  
+  <footer>
+    <p>&copy; 2025 CipiNawi | El Salvador</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

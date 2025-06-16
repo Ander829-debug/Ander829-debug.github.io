@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simulación: Desarrollo de Software - Capacítate SV</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header>
+  <div class="header-logo-container">
+    <img src="imagenes/logo2.jpg" alt="Logo de CipiNawi" class="header-logo">
+    <h1>CipiNawi</h1>
+  </div>
+  <p>Formación salvadoreña para un futuro mejor</p>
+  </header>
+
+  <main>
+    <a href="simulaciones.html" class="back-link">← Volver a Simulaciones</a>
+    <h2 class="section-title">Simulación: El Algoritmo del Café</h2>
+    <p>¡Bienvenido, programador! Tu misión es ordenar los pasos lógicos para que una máquina de café funcione correctamente. **Arrastra y suelta los bloques de código en el orden correcto.**</p>
+
+    <div class="sim-container">
+      <h3>Ordena los pasos lógicos:</h3>
+      <ul id="codigo-desordenado" class="codigo-lista">
+        <li draggable="true" class="codigo-bloque" data-order="3">Y si el usuario insertó dinero</li>
+        <li draggable="true" class="codigo-bloque" data-order="5">De lo contrario: Mostrar mensaje de error</li>
+        <li draggable="true" class="codigo-bloque" data-order="1">Si la máquina tiene granos de café</li>
+        <li draggable="true" class="codigo-bloque" data-order="4">Entonces: Servir café caliente</li>
+        <li draggable="true" class="codigo-bloque" data-order="2">Y si tiene agua disponible</li>
+      </ul>
+    </div>
+
+    <button id="verificarBtn" class="sim-button">Verificar Solución</button>
+
+    <div id="resultadoSimulacion">
+      </div>
+
+  </main>
+  
+  <footer>
+    <p>&copy; 2025 Capacítate SV | El Salvador</p>
+  </footer>
+
+  <script src="simulacion_software.js"></script>
+</body>
+</html>

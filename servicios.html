@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catálogo de Servicios - CipiNawi</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header>
+    <div class="header-logo-container">
+      <img src="imagenes/logo2.jpg" alt="Logo de CipiNawi" class="header-logo">
+      <h1>CipiNawi</h1>
+    </div>
+    <p>Formación salvadoreña para un futuro mejor</p>
+  </header>
+
+  <main>
+    <a href="index.html" class="back-link">← Volver al inicio</a>
+    <h2 class="section-title">Encuentra Servicios Profesionales</h2>
+    <p>Apoya a los profesionales y técnicos locales. Aquí puedes encontrar y contratar servicios para tus necesidades del hogar o proyectos personales.</p>
+
+    <div class="filter-container">
+      <div class="filter-group">
+        <label for="category-filter">Filtrar por Servicio:</label>
+        <select id="category-filter" class="filter-select">
+          <option value="all">Todas las categorías</option>
+          <option value="carpinteria">Carpintería</option>
+          <option value="electricidad">Electricidad</option>
+          <option value="fontaneria">Fontanería</option>
+          <option value="belleza">Belleza</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="course-grid">
+      <div class="course-card" data-category="carpinteria">
+        <img src="img/servicio_mesa.jpg" alt="Servicio de Carpintería" class="course-image">
+        <div class="course-body">
+          <h3>Fabricación de Mesas de Centro</h3>
+          <p class="service-provider">Por: José Hernández</p>
+          <div class="course-meta">
+            <span class="course-level tecnico">Carpintería</span>
+            <span class="course-price">$75.00</span>
+          </div>
+          <button class="sim-button">Contactar</button>
+        </div>
+      </div>
+
+      <div class="course-card" data-category="electricidad">
+        <img src="img/servicio_ducha.jpg" alt="Servicio de Electricidad" class="course-image">
+        <div class="course-body">
+          <h3>Instalación de Duchas Eléctricas</h3>
+          <p class="service-provider">Por: María Aguilar</p>
+          <div class="course-meta">
+            <span class="course-level tecnico">Electricidad</span>
+            <span class="course-price">$35.00</span>
+          </div>
+          <button class="sim-button">Contactar</button>
+        </div>
+      </div>
+      
+      <div class="course-card" data-category="belleza">
+        <img src="img/servicio_unas.jpg" alt="Servicio de Belleza" class="course-image">
+        <div class="course-body">
+          <h3>Manicura y Pedicura a Domicilio</h3>
+          <p class="service-provider">Por: Sofía Rivas</p>
+          <div class="course-meta">
+            <span class="course-level belleza">Belleza</span>
+            <span class="course-price">$15.00</span>
+          </div>
+          <button class="sim-button">Contactar</button>
+        </div>
+      </div>
+
+      <div class="course-card" data-category="fontaneria">
+        <img src="img/servicio_fuga.jpg" alt="Servicio de Fontanería" class="course-image">
+        <div class="course-body">
+          <h3>Detección y Reparación de Fugas</h3>
+          <p class="service-provider">Por: Carlos Meléndez</p>
+          <div class="course-meta">
+            <span class="course-level tecnico">Fontanería</span>
+            <span class="course-price">$40.00</span>
+          </div>
+          <button class="sim-button">Contactar</button>
+        </div>
+      </div>
+
+      <div class="course-card" data-category="carpinteria">
+        <img src="img/servicio_repisa.jpg" alt="Servicio de Carpintería" class="course-image">
+        <div class="course-body">
+          <h3>Instalación de Repisas Flotantes</h3>
+          <p class="service-provider">Por: José Hernández</p>
+          <div class="course-meta">
+            <span class="course-level tecnico">Carpintería</span>
+            <span class="course-price">$20.00</span>
+          </div>
+          <button class="sim-button">Contactar</button>
+        </div>
+      </div>
+
+       <div class="course-card" data-category="belleza">
+        <img src="img/servicio_maquillaje.jpg" alt="Servicio de Belleza" class="course-image">
+        <div class="course-body">
+          <h3>Maquillaje Profesional para Eventos</h3>
+          <p class="service-provider">Por: Sofía Rivas</p>
+          <div class="course-meta">
+            <span class="course-level belleza">Belleza</span>
+            <span class="course-price">$25.00</span>
+          </div>
+          <button class="sim-button">Contactar</button>
+        </div>
+      </div>
+    </div>
+  </main>
+  
+  <footer>
+    <p>&copy; 2025 CipiNawi | El Salvador</p>
+  </footer>
+
+  <script src="servicios_filtro.js"></script>
+</body>
+</html>
